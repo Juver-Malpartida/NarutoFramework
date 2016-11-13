@@ -1,7 +1,7 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 
-namespace AppDocumentation.Steps
+namespace AppDocumentation.FeatureSteps
 {
     [Binding]
     public class AdoptingPuppiesSteps
@@ -9,7 +9,7 @@ namespace AppDocumentation.Steps
         [Given(@"I am on the puppy adoption site")]
         public void GivenIAmOnThePuppyAdoptionSite()
         {
-            ScenarioContext.Current.Pending();
+            
         }
         
         [When(@"I complete the adoption of a puppy")]
