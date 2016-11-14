@@ -38,6 +38,14 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bogus, Version=7.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bogus.7.1.7\lib\net40\Bogus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
@@ -70,6 +78,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AdoptingPuppies.feature</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\WebElementExtensions.cs" />
+    <Compile Include="Pages\AdoptionFormPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FeatureSteps\AdoptingPuppiesSteps.cs" />
   </ItemGroup>
@@ -79,11 +89,11 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AdoptingPuppies.feature.cs</LastGenOutput>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pages\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
